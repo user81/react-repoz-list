@@ -1,0 +1,451 @@
+@charset "UTF-8";
+
+* {
+  font-family: "Inter";
+  font-weight: 400;
+  color: #000000;
+}
+
+.body {
+  background: #f9f9f9;
+  margin: 0px;
+}
+
+/*навигация*/
+.card {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.nav {
+  position: relative;
+  width: 100%;
+  height: 72px;
+  left: 0px;
+  top: 0px;
+}
+
+.nav_color_blue {
+  background: #0064eb;
+}
+
+.nav__search {
+  position: absolute;
+  left: 104px;
+  top: 16px;
+}
+
+.logo-git {
+  position: absolute;
+  width: 41.02px;
+  height: 40px;
+  background-image: url("icon/git-logo.svg");
+  background-size: 41.02;
+  left: 41px;
+  top: 16px;
+}
+
+/*? поменять поиск   */
+.search {
+  width: 500px;
+  height: 40px;
+}
+
+.search_stule_white {
+  background: #ffffff;
+  border-radius: 6px;
+}
+
+.search__icon-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 472px;
+  height: 24px;
+  gap: 6px;
+  padding: 0px;
+  position: absolute;
+  left: 14px;
+  top: 8px;
+}
+
+.search__input {
+  width: 430px;
+  height: 38px;
+  position: absolute;
+  left: 38px;
+  outline: none;
+  border: none;
+  background: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  align-items: center;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.search__button {
+  width: 24px;
+  height: 24px;
+  background-image: url("icon/search.svg");
+  background-size: 24px;
+  border: none;
+}
+
+
+/*стиль для пустого поля если ничего не нашли*/
+.center-search {
+  width: 217px;
+  height: 196px;
+}
+
+.center-search__icon {
+  width: 64.17px;
+  height: 64.17px;
+  background-image: url("icon/search.svg");
+  background-size: 64.17px;
+  position: relative;
+  margin: 23.92px auto;
+}
+
+/* стиль для окна где не нашли пользователей */
+.empry-user {
+  width: 156px;
+  height: 165px;
+}
+
+.empry-user__icon {
+  width: 65px;
+  height: 75px;
+  background-image: url("icon/empry-user.svg");
+  background-size: 65px;
+  position: relative;
+  margin: 0px 23px 2px 45px;
+}
+
+.empty-list {
+  width: 243px;
+  height: 165px;
+}
+
+.empty-list__icon {
+  width: 76px;
+  height: 62px;
+  background-image: url("icon/empty-list.svg");
+  background-size: 76px;
+  position: relative;
+  margin: 24px 83px 26px 84px;
+}
+
+/*центрирование относительно экрана*/
+.center {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-empty-repository {
+  top: 197px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.description-window {
+  height: 62px;
+  font-size: 22px;
+  line-height: 140%;
+  text-align: center;
+  color: #808080;
+}
+
+/* стиль для окна с профилем и списком репозиториев */
+.user {
+  display: inline-block;
+  width: 377px;
+  /*!! остановился*/
+}
+
+.user__detals {
+  position: relative;
+  left: 56px;
+  top: 40px;
+}
+
+.user__avatar {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+}
+
+.user__avatar_color_grey {
+  background: #c4c4c4;
+}
+
+.user__avatar-info {
+  position: relative;
+  top: 28px;
+}
+
+.user__user-name {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 130%;
+  word-break: break-all;
+}
+
+.user__nic-name {
+  display: block;
+  text-decoration: none;
+  padding-top: 12px;
+  padding-bottom: 25px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0064eb;
+  word-break: break-all;
+}
+
+.user__followers {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.user__following {
+  display: inline-block;
+}
+
+.user__group-icon {
+  display: inline-block;
+  margin: 0 1px;
+  width: 24.08px;
+  height: 14px;
+  background-image: url("icon/group.svg");
+  background-size: 24.08px;
+}
+
+.user__followers-following {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.user__person-icon {
+  margin: 4px;
+  width: 16.06px;
+  height: 16px;
+  background-image: url("icon/person.svg");
+  background-size: 16.06px;
+  float: left;
+}
+
+/* !остановился */
+.works_size {
+  position: relative;
+  float: right;
+  width: 933px;
+}
+
+.works_size__repositories {
+  position: relative;
+}
+
+.works_size__repositories-count {
+  margin-top: 28px;
+  margin-bottom: 5px;
+}
+
+.repository {
+  margin-top: 24px;
+  width: 877px;
+  height: 112px;
+  background: #ffffff;
+  border-radius: 6px;
+}
+
+.repository__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 32px;
+  gap: 16px;
+}
+
+.repository__href {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0064eb;
+}
+
+.repository__description {
+  padding: 0px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.pagination {
+  bottom: 28px;
+  right: 69px;
+  height: 25px;
+  top: 24px;
+}
+
+.pagination__position {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.pagination__font {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+  align-items: center;
+  color: #808080;
+}
+
+.pagination__button {
+  padding: 3.5px 3px 2.5px 3px;
+}
+
+.pagination__icon-less-than {
+  margin: 3.92px 6.92px;
+  width: 7.12px;
+  height: 11.41px;
+  background-image: url("icon/less-than.svg");
+}
+
+.search__button:hover,
+.pagination .pagination__icon-less-than:hover,
+.pagination .pagination__icon-greater-than:hover {
+  filter: invert(41%) sepia(88%) saturate(6757%) hue-rotate(208deg) brightness(95%) contrast(101%);
+  -webkit-filter: invert(41%) sepia(88%) saturate(6757%) hue-rotate(208deg) brightness(95%) contrast(101%);
+  -moz-filter: invert(41%) sepia(88%) saturate(6757%) hue-rotate(208deg) brightness(95%) contrast(101%);
+}
+
+.pagination_active {
+  padding: 2px 6px;
+  background: #0064eb;
+  border-radius: 3px;
+  margin-left: 16px;
+}
+
+.pagination__icon-greater-than {
+  margin: 3.92px 6.92px;
+  width: 7.12px;
+  height: 11.41px;
+  background-image: url("icon/greater-than.svg");
+}
+
+.rc-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.rc-pagination li:focus {
+  outline: 0;
+}
+
+.rc-pagination button:focus {
+  outline: 0;
+}
+
+.rc-pagination li,
+.rc-pagination-item,
+.rc-pagination-prev,
+.rc-pagination-jump-prev,
+.rc-pagination-jump-next {
+  margin-top: -6px;
+  margin-left: 16px;
+  list-style: none;
+}
+
+.rc-pagination-total-text,
+.rc-pagination-jump-next button,
+.rc-pagination-jump-prev button {
+  font-size: 14px;
+  line-height: 21px;
+  color: #808080;
+  cursor: initial;
+}
+
+.rc-pagination-jump-next button,
+.rc-pagination-jump-prev button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.rc-pagination-jump-next button:after,
+.rc-pagination-jump-prev button:after {
+  display: block;
+  content: "...";
+}
+
+.rc-pagination-item,
+.rc-pagination-prev,
+.rc-pagination-next,
+.rc-pagination-total-text {
+  min-width: initial;
+  height: auto;
+  line-height: initial;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.rc-pagination-item a,
+.rc-pagination-item button,
+.rc-pagination-prev a,
+.rc-pagination-prev button,
+.rc-pagination-next a,
+.rc-pagination-next button,
+.rc-pagination-total-text a,
+.rc-pagination-total-text button {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 21px;
+  color: #656f84;
+}
+
+.rc-pagination-item.rc-pagination-item-active a,
+.rc-pagination-item.rc-pagination-item-active a:hover,
+.rc-pagination-prev.rc-pagination-item-active a,
+.rc-pagination-prev.rc-pagination-item-active a:hover,
+.rc-pagination-next.rc-pagination-item-active a,
+.rc-pagination-next.rc-pagination-item-active a:hover,
+.rc-pagination-total-text.rc-pagination-item-active a,
+.rc-pagination-total-text.rc-pagination-item-active a:hover {
+  padding: 2px 6px;
+  color: #FFFFFF;
+  background: #0064eb;
+  border-color: #0064eb;
+  border-radius: 3px;
+}
+
+.rc-pagination-item a:hover,
+.rc-pagination-item button:hover,
+.rc-pagination-prev a:hover,
+.rc-pagination-prev button:hover,
+.rc-pagination-next a:hover,
+.rc-pagination-next button:hover,
+.rc-pagination-total-text a:hover,
+.rc-pagination-total-text button:hover {
+  color: #0064eb;
+}
